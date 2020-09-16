@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 90%;
+	height: 10vh;
+	animation: drive 2s ease;
+}
+.logo,
+.nav-links,
+.cart{
+	display: flex;
+}
+.logo{
+	flex: 1;
+}
+.logo-name{
+	color: #5f5f79;
+}
+nav {
+	flex: 2;
+}
+.nav-links {
+	list-style: none;
+	justify-content: space-around;
+}
+.nav-link{
+	text-decoration: none;
+	color: #5f5f79;
+	font-size: 18px;
+	margin: 0px 50px 0px 0px;
+}
+.cart{
+	flex: 1;
+	justify-content: flex-end;
+}
+.presentation{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction{
+	display: flex;
+}
+.intro-tech{
+	flex: 1;
+	align-items: center;
+}
+.intro-tech h1{
+	font-size: 44px;
+	align-items: center;
+	animation: enter 2s ease 2s;
+	color: #5f5f79;
+}
+.intro-tech p{
+	font-size: 22px;
+	margin: 20px 0px 30px 0px;
+	color: #5f5f79;
+	animation: drive 2s ease 4s;
+}
+.inch {
+	border: 2px solid #c36cbb;
+	background: transparent;
+	color: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	animation: drive 2s ease 6s;
+}
+.inch:hover{
+	background: #5f5f79;
+	color: #fff;
+}
+.cta {
+	background: #c36cbb;
+	color: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	color: white;
+	border: none;
+	animation: drive 2s ease 6s;
+}
+.matebook{
+	
+}
+.matebook img{
+	flex: 1;
+	height: 60vh;
+	position: absolute;
+	width: 30%;
+	margin-top: -100px;
+	filter: drop-shadow(0px 5px 0px black);
+	animation: fly 2s ease;
+}
+.big-circle{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	height: 80%;
+	opacity: 0.5;
+}
+
+.medium-circle{
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+
+.small-circle{
+	position: absolute;
+	top: 60%;
+	right: 60%;
+	z-index: -1;
+	height: 40%;
+	opacity: 0.4;
+}
+.laptop-select{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	right: 30%;
+	width: 30%;
+}
+@keyframes fly {
+	0%{
+		opacity: 0;
+		transform: translateY(-68px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes enter {
+	0%{
+		opacity: 0;
+		transform: translateY(-68px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes drive {
+	0%{
+		opacity: 0;
+		transform: translateX(-68px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
